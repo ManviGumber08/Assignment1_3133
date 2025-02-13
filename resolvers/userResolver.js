@@ -4,6 +4,7 @@ const jwt = require("jsonwebtoken");
 const { GraphQLString, GraphQLNonNull } = require("graphql");
 const { UserType } = require("../types/UserType");
 
+
 const userQueries = {
   login: {
     type: UserType,

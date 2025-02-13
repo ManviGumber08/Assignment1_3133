@@ -1,6 +1,6 @@
 const express = require("express");
 const { graphqlHTTP } = require("express-graphql");
-const schema = require("./schema/index");
+const schema = require("./schema/index"); // Ensure this path is correct
 const connectDB = require("./config/db");
 const cors = require("cors");
 const dotenv = require("dotenv");
@@ -32,4 +32,4 @@ app.use(
 
 // Start Server
 const PORT = process.env.PORT || 4000;
-app.listen(PORT, () => console.log(` Server running on port ${PORT}`));
+app.listen(PORT, () => console.log(`🚀 Server running on port ${PORT}`));
